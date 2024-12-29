@@ -17,7 +17,7 @@
 
 html, body {
   /*Background Settings*/
-  background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_ER6SFXPVahCTPdL6aG-q9hIO9Ylof7aIBXgLsrz4fiKlJrs7D933t7oju4nD0FDk5uck7-HDy7ib0VyvTcuGYHFpxPFiWRY5Zaw7lwmdhbdy3uwAJLfJdhhsoWRbveE9GfwRU9_9RCZmotFpGsNR=w1021-h681-s-no-gm?authuser=0");
+  background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOAg3y_5GOHWlrK4cEpe7xCCYVlOfvIYawenQi1rJvaNM10fmBv3ZoL7C8yHLbx0aLBAcKi0acyoBVtE_5mClRvqca4r_zEWAvkl4g71vP1Yq1FE-tFt0moHQ4AA3N6GMZMAXwZDH5nX6eGc0zsF6yM=w354-h630-s-no-gm?authuser=0");
   width: 100%;
   min-height: 100vh;
   background-position: center;
@@ -140,7 +140,8 @@ a {
 }
 
 .c-title {
-  font-size: 23px;
+  font-family: var(--secondary-font-family);
+  font-size: 3.5em;
 }
 
 .b-name {
@@ -787,7 +788,7 @@ section {
 @media screen and (max-width: 768px) and (max-width: 987px) {
   body {
     /*Background Settings*/
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_ER6SFXPVahCTPdL6aG-q9hIO9Ylof7aIBXgLsrz4fiKlJrs7D933t7oju4nD0FDk5uck7-HDy7ib0VyvTcuGYHFpxPFiWRY5Zaw7lwmdhbdy3uwAJLfJdhhsoWRbveE9GfwRU9_9RCZmotFpGsNR=w1021-h681-s-no-gm?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOAg3y_5GOHWlrK4cEpe7xCCYVlOfvIYawenQi1rJvaNM10fmBv3ZoL7C8yHLbx0aLBAcKi0acyoBVtE_5mClRvqca4r_zEWAvkl4g71vP1Yq1FE-tFt0moHQ4AA3N6GMZMAXwZDH5nX6eGc0zsF6yM=w354-h630-s-no-gm?authuser=0");
     width: 100%;
     min-height: 100vh;
     background-position: center;
@@ -806,7 +807,7 @@ section {
 @media screen and (max-width: 1024px) {
   body {
     /*Background Settings*/
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_ER6SFXPVahCTPdL6aG-q9hIO9Ylof7aIBXgLsrz4fiKlJrs7D933t7oju4nD0FDk5uck7-HDy7ib0VyvTcuGYHFpxPFiWRY5Zaw7lwmdhbdy3uwAJLfJdhhsoWRbveE9GfwRU9_9RCZmotFpGsNR=w1021-h681-s-no-gm?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOAg3y_5GOHWlrK4cEpe7xCCYVlOfvIYawenQi1rJvaNM10fmBv3ZoL7C8yHLbx0aLBAcKi0acyoBVtE_5mClRvqca4r_zEWAvkl4g71vP1Yq1FE-tFt0moHQ4AA3N6GMZMAXwZDH5nX6eGc0zsF6yM=w354-h630-s-no-gm?authuser=0");
     width: 100%;
     min-height: 100vh;
     background-position: center;
@@ -835,7 +836,7 @@ section {
 @media screen and (max-width: 1280px) {
   body {
     /*Background Settings*/
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_ER6SFXPVahCTPdL6aG-q9hIO9Ylof7aIBXgLsrz4fiKlJrs7D933t7oju4nD0FDk5uck7-HDy7ib0VyvTcuGYHFpxPFiWRY5Zaw7lwmdhbdy3uwAJLfJdhhsoWRbveE9GfwRU9_9RCZmotFpGsNR=w1021-h681-s-no-gm?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOAg3y_5GOHWlrK4cEpe7xCCYVlOfvIYawenQi1rJvaNM10fmBv3ZoL7C8yHLbx0aLBAcKi0acyoBVtE_5mClRvqca4r_zEWAvkl4g71vP1Yq1FE-tFt0moHQ4AA3N6GMZMAXwZDH5nX6eGc0zsF6yM=w354-h630-s-no-gm?authuser=0");
     width: 100%;
     min-height: 100vh;
     background-position: center;
@@ -867,7 +868,7 @@ section {
 @media screen and (max-width: 1366px) {
   body {
     /*Background Settings*/
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_ER6SFXPVahCTPdL6aG-q9hIO9Ylof7aIBXgLsrz4fiKlJrs7D933t7oju4nD0FDk5uck7-HDy7ib0VyvTcuGYHFpxPFiWRY5Zaw7lwmdhbdy3uwAJLfJdhhsoWRbveE9GfwRU9_9RCZmotFpGsNR=w1021-h681-s-no-gm?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOAg3y_5GOHWlrK4cEpe7xCCYVlOfvIYawenQi1rJvaNM10fmBv3ZoL7C8yHLbx0aLBAcKi0acyoBVtE_5mClRvqca4r_zEWAvkl4g71vP1Yq1FE-tFt0moHQ4AA3N6GMZMAXwZDH5nX6eGc0zsF6yM=w354-h630-s-no-gm?authuser=0");
     width: 100%;
     min-height: 100vh;
     background-position: center;
@@ -900,7 +901,7 @@ section {
 @media screen and (max-width: 1440px) {
   body {
     /*Background Settings*/
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_ER6SFXPVahCTPdL6aG-q9hIO9Ylof7aIBXgLsrz4fiKlJrs7D933t7oju4nD0FDk5uck7-HDy7ib0VyvTcuGYHFpxPFiWRY5Zaw7lwmdhbdy3uwAJLfJdhhsoWRbveE9GfwRU9_9RCZmotFpGsNR=w1021-h681-s-no-gm?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOAg3y_5GOHWlrK4cEpe7xCCYVlOfvIYawenQi1rJvaNM10fmBv3ZoL7C8yHLbx0aLBAcKi0acyoBVtE_5mClRvqca4r_zEWAvkl4g71vP1Yq1FE-tFt0moHQ4AA3N6GMZMAXwZDH5nX6eGc0zsF6yM=w354-h630-s-no-gm?authuser=0");
     width: 100%;
     min-height: 100vh;
     background-position: center;
@@ -933,7 +934,7 @@ section {
 @media screen and (max-width: 1600px) {
   body {
     /*Background Settings*/
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_ER6SFXPVahCTPdL6aG-q9hIO9Ylof7aIBXgLsrz4fiKlJrs7D933t7oju4nD0FDk5uck7-HDy7ib0VyvTcuGYHFpxPFiWRY5Zaw7lwmdhbdy3uwAJLfJdhhsoWRbveE9GfwRU9_9RCZmotFpGsNR=w1021-h681-s-no-gm?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOAg3y_5GOHWlrK4cEpe7xCCYVlOfvIYawenQi1rJvaNM10fmBv3ZoL7C8yHLbx0aLBAcKi0acyoBVtE_5mClRvqca4r_zEWAvkl4g71vP1Yq1FE-tFt0moHQ4AA3N6GMZMAXwZDH5nX6eGc0zsF6yM=w354-h630-s-no-gm?authuser=0");
     width: 100%;
     min-height: 100vh;
     background-position: center;
@@ -966,7 +967,7 @@ section {
 @media screen and (max-width: 1920px) {
   body {
     /*Background Settings*/
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_ER6SFXPVahCTPdL6aG-q9hIO9Ylof7aIBXgLsrz4fiKlJrs7D933t7oju4nD0FDk5uck7-HDy7ib0VyvTcuGYHFpxPFiWRY5Zaw7lwmdhbdy3uwAJLfJdhhsoWRbveE9GfwRU9_9RCZmotFpGsNR=w1021-h681-s-no-gm?authuser=0");
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczOAg3y_5GOHWlrK4cEpe7xCCYVlOfvIYawenQi1rJvaNM10fmBv3ZoL7C8yHLbx0aLBAcKi0acyoBVtE_5mClRvqca4r_zEWAvkl4g71vP1Yq1FE-tFt0moHQ4AA3N6GMZMAXwZDH5nX6eGc0zsF6yM=w354-h630-s-no-gm?authuser=0");
     width: 100%;
     min-height: 100vh;
     background-position: center;
@@ -994,5 +995,9 @@ section {
   .no-column-large .row {
     flex-direction: row;
   }
+
+  .c-title {
+    font-size: 2.5rem;
+}
 
 }
