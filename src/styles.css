@@ -8,8 +8,8 @@
   --line-height: 1.6;
   --primary-font-color: #222;
   /*Color Theme*/
-  --main-color-theme:#909938;
-  --secondary-color-theme: #BDBF5D;
+  --main-color-theme:#003399;
+  --secondary-color-theme: #c5d5e2;
   /*padding and margin*/
   --primary-margin: 20px;
 }
@@ -603,7 +603,7 @@ div .main-wake {
   padding: 0 30px;
   padding-right: 16px;
   overflow: hidden;
-  color: #ab8d8d;
+  color: #ffffff;
   word-spacing: 70px;
 }
 
@@ -661,6 +661,9 @@ div .main-wake {
   position:absolute;    
   top: 0;
   left: 0;  
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: transform 700ms 400ms ease-out; 
@@ -781,7 +784,7 @@ section {
 .col {
   width: 100%;
 }
-@media screen and (max-width: 768px) and (max-width: 987px;) {
+@media screen and (max-width: 768px) and (max-width: 987px) {
   body {
     /*Background Settings*/
     background-image: url("https://lh3.googleusercontent.com/pw/AP1GczO_ER6SFXPVahCTPdL6aG-q9hIO9Ylof7aIBXgLsrz4fiKlJrs7D933t7oju4nD0FDk5uck7-HDy7ib0VyvTcuGYHFpxPFiWRY5Zaw7lwmdhbdy3uwAJLfJdhhsoWRbveE9GfwRU9_9RCZmotFpGsNR=w1021-h681-s-no-gm?authuser=0");
