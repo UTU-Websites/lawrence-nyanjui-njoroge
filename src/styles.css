@@ -502,7 +502,7 @@ div .main-wake {
 
 .collapsible {
   background-color: var(--secondary-color-theme);
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   padding: 18px;
   width: 100%;
