@@ -51,6 +51,9 @@ div .col, .row {
   height: 50px;
 }
 
+.picha-sanaa {
+  overflow-y: auto; /* Allows vertical scrolling */
+}
 
 
 #image-gaps {
@@ -69,16 +72,41 @@ img:hover {
 }
 
 /* Lightbox styling */
+/* Lightbox Container */
 .lightbox {
   display: none;
   position: fixed;
-  z-index: 1000;
-  padding-top: 60px;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; /* Start invisible */
 }
+
+/* Active state for showing the lightbox */
+.lightbox.active {
+  display: flex;
+  opacity: 1; /* Fade in */
+}
+
+/* Lightbox Image */
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Show the image after fade-in */
+.lightbox-content.visible {
+  opacity: 1;
+}
+
 
 .lightbox.active {
   display: flex;
@@ -86,15 +114,6 @@ img:hover {
   justify-content: center;
   align-items: center;
   overflow: auto;
-}
-
-.lightbox-content {
-  margin: auto;
-  max-width: 90%;
-  max-height: 80%;
-  width: auto;
-  height: auto;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }
 
 .lightbox img {
@@ -109,6 +128,7 @@ img:hover {
   top: 58px;
   right: 30px;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.259);
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -124,11 +144,12 @@ img:hover {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  padding: 26px 16px;
+  top: 70%;
+  padding: 16px 16px;
   color: #fff;
-  font-weight: bold;
-  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.259);
+  font-weight: bolder;
+  font-size: 35px;
   transition: 0.6s ease;
 }
 
