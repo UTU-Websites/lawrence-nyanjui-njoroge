@@ -126,7 +126,7 @@ img:hover {
 .close {
   position: absolute;
   top: 58px;
-  right: 30px;
+  right: 10px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.259);
   font-size: 40px;
@@ -144,7 +144,7 @@ img:hover {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 70%;
+  top: 65%;
   padding: 16px 16px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.259);
