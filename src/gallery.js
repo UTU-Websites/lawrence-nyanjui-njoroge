@@ -40,8 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let isPlaying = false;
 
     // Variables to track touch scroll sensitivity
-    let touchStartY = 0;
-    let touchEndY = 0;
     let touchStartX = 0;
     let touchEndX = 0;
     const touchThreshold = 100; // Adjust sensitivity threshold as needed
@@ -49,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Open the lightbox with the selected image
     function openLightbox(index) {
         lightbox.classList.add('active');
-        lightbox.setAttribute('aria-hidden', 'false');  // Make lightbox accessible when open
+        lightbox.setAttribute('aria-hidden', 'false');
         lightboxImg.src = images[index].src;
         currentImageIndex = index;
         updateToggleButton();
@@ -59,39 +57,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close the lightbox
     function closeLightbox() {
         lightbox.classList.remove('active');
-        lightbox.setAttribute('aria-hidden', 'true');  // Hide lightbox from screen readers when closed
+        lightbox.setAttribute('aria-hidden', 'true');
         stopSlideshow();
     }
 
     // Show the next image
     function showNextImage() {
-        fadeOut(lightboxImg, () => {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            lightboxImg.src = images[currentImageIndex].src;
-            fadeIn(lightboxImg);
-        });
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        lightboxImg.src = images[currentImageIndex].src;
     }
 
     // Show the previous image
     function showPrevImage() {
-        fadeOut(lightboxImg, () => {
-            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-            lightboxImg.src = images[currentImageIndex].src;
-            fadeIn(lightboxImg);
-        });
-    }
-
-    // Fade out effect
-    function fadeOut(element, callback) {
-        element.classList.remove('visible'); // Remove the fade-in class
-        setTimeout(() => {
-            callback(); // Execute the callback function after the opacity transition
-        }, 500); // Match this duration with your CSS transition duration
-    }
-
-    // Fade in effect
-    function fadeIn(element) {
-        element.classList.add('visible'); // Add the fade-in class to trigger opacity transition
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        lightboxImg.src = images[currentImageIndex].src;
     }
 
     // Start the slideshow
@@ -134,14 +113,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Touch handling for image tap, only opens if not scrolled
         img.addEventListener('touchstart', (e) => {
-            touchStartY = e.changedTouches[0].screenY;
             touchStartX = e.changedTouches[0].screenX;
         });
 
         img.addEventListener('touchmove', (e) => {
-            touchEndY = e.changedTouches[0].screenY;
             touchEndX = e.changedTouches[0].screenX;
-            const touchDiff = Math.abs(touchStartY - touchEndY);
+            const touchDiff = Math.abs(touchStartX - touchEndX);
 
             // Stop propagation if threshold is exceeded (allowing scroll without lightbox open)
             if (touchDiff > touchThreshold) {
@@ -150,12 +127,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         img.addEventListener('touchend', (e) => {
-            const touchDiff = Math.abs(touchStartY - touchEndY);
-            if (touchDiff < touchThreshold) { 
-                openLightbox(index); // Minimal movement, so open lightbox
+            const touchDiff = touchStartX - touchEndX;
+            if (Math.abs(touchDiff) > touchThreshold) {
+                if (touchDiff > 0) {
+                    showNextImage();  // Swipe left to show next image
+                } else {
+                    showPrevImage();  // Swipe right to show previous image
+                }
             }
-            touchStartY = 0; // Reset after each touch
-            touchEndY = 0;
+            touchStartX = 0; // Reset after each touch
+            touchEndX = 0;
         });
     });
 
@@ -196,5 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showPrevImage();  // Swipe right to show previous image
             }
         }
+        touchStartX = 0; // Reset after each touch
+        touchEndX = 0;
     });
 });
